@@ -1,0 +1,5602 @@
+[
+  {
+    "second": 0,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 0,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 0,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 1,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 1,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 1,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 2,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": true
+  },
+  {
+    "second": 2,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 2,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 3,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 3,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 3,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 4,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 4,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 4,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 5,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 5,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 5,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 6,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 6,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 6,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 7,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 7,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 7,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 8,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 8,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 8,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 9,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 9,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 9,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 10,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 10,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 10,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 11,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 11,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 11,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 12,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 12,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 12,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 13,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 13,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 13,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 14,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 14,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 14,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 15,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 15,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 15,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 16,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 16,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 16,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 17,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 17,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 17,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 18,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 18,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 18,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 19,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 19,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 19,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 20,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 20,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 20,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 21,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 21,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 21,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 22,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 22,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 22,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 23,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 23,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 23,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 24,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 24,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 24,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 25,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 25,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 25,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 26,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 26,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 26,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 27,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 27,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 27,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 28,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 28,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 28,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 29,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 29,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 29,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 30,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 30,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 30,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 31,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 31,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 31,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 32,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 32,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 32,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 33,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 33,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 33,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 34,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 34,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 34,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 35,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 35,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 35,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 36,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 36,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 36,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 37,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 37,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 37,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 38,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 38,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 38,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 39,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 39,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 39,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 40,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 40,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 40,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 41,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 41,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 41,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 42,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 42,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 42,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 43,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 43,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 43,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 44,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 44,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 44,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 45,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 45,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 45,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 46,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 46,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 46,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 47,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 47,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 47,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 48,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 48,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 48,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 49,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 49,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 49,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 50,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 50,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 50,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 51,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 51,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 51,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": true
+  },
+  {
+    "second": 52,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 52,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 52,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 53,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 53,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 53,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 54,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 54,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 54,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 55,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 55,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 55,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 56,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 56,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 56,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 57,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 57,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 57,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 58,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 58,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 58,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 59,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 59,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 59,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 60,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 60,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 60,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 61,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 61,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 61,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 62,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 62,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 62,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 63,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 63,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 63,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 64,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 64,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 64,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 65,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 65,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 65,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 66,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 66,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 66,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 67,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 67,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 67,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": true
+  },
+  {
+    "second": 68,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 68,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 68,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 69,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 69,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 69,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 70,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 70,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 70,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 71,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 71,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 71,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 72,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 72,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 72,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 73,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 73,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 73,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 74,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 74,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 74,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 75,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 75,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 75,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 76,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 76,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 76,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 77,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 77,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 77,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 78,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 78,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 78,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 79,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 79,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 79,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 80,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 80,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 80,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 81,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": true
+  },
+  {
+    "second": 81,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 81,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 82,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 82,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 82,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 83,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 83,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 83,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 84,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 84,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 84,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 85,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 85,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 85,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 86,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 86,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 86,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 87,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 87,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 87,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 88,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 88,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 88,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 89,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 89,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 89,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 90,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 90,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 90,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 91,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 91,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 91,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 92,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 92,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 92,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 93,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 93,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 93,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 94,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 94,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 94,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 95,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 95,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 95,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 96,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 96,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 96,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 97,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 97,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 97,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 98,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 98,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 98,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 99,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 99,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 99,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 100,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 101,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 102,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 103,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 104,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 105,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 106,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 107,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 108,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 109,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 110,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 111,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 112,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": true
+  },
+  {
+    "second": 113,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 114,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 115,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 116,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 117,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 118,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": true
+  },
+  {
+    "second": 119,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 120,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 121,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 122,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 123,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 124,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 125,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 126,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 127,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 128,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 129,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 130,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 131,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 132,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 133,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 134,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 135,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 136,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 137,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 138,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 139,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": true
+  },
+  {
+    "second": 140,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 141,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 142,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 143,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 144,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 145,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 146,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 147,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 148,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 149,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 150,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 151,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 152,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": true
+  },
+  {
+    "second": 153,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 154,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 155,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 156,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 157,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 158,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 159,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 160,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 161,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 162,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 163,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 164,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 165,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 166,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 167,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 168,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 169,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": true
+  },
+  {
+    "second": 170,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 171,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 172,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 173,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 174,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 175,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 176,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 177,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 178,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 179,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 180,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 181,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 182,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": true
+  },
+  {
+    "second": 183,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 184,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 185,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 186,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 187,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 188,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 189,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 190,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 191,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 192,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 193,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 194,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 195,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 196,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 197,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 198,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 199,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 200,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 200,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 200,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 200,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 201,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 201,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 201,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 201,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 202,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 202,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 202,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 202,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 203,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 203,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 203,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 203,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 204,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 204,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": true
+  },
+  {
+    "second": 204,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 204,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 205,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 205,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 205,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 205,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 206,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 206,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 206,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 206,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 207,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 207,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 207,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 207,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 208,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 208,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 208,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 208,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 209,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 209,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 209,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 209,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 210,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 210,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 210,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 210,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 211,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 211,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 211,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 211,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 212,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 212,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 212,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 212,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 213,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 213,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 213,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 213,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 214,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 214,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 214,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 214,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 215,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 215,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 215,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 215,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 216,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 216,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 216,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 216,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 217,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 217,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 217,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 217,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 218,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 218,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 218,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 218,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 219,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 219,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 219,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 219,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 220,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 220,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 220,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 220,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 221,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 221,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 221,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 221,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 222,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 222,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 222,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 222,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 223,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 223,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 223,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 223,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 224,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 224,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 224,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 224,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 225,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 225,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 225,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 225,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 226,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 226,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 226,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 226,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 227,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 227,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 227,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 227,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 228,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 228,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 228,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 228,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 229,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 229,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 229,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 229,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 230,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 230,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 230,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 230,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 231,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 231,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 231,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 231,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 232,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 232,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 232,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 232,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 233,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 233,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 233,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 233,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 234,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 234,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 234,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 234,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 235,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 235,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 235,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 235,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 236,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 236,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 236,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 236,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 237,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 237,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 237,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 237,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 238,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 238,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 238,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 238,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 239,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 239,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 239,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 239,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 240,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 240,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 240,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 240,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 241,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 241,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 241,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 241,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 242,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 242,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 242,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 242,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 243,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 243,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 243,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 243,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 244,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 244,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 244,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 244,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 245,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 245,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 245,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 245,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 246,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 246,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 246,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 246,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 247,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 247,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 247,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 247,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 248,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 248,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 248,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 248,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 249,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 249,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 249,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 249,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": true
+  },
+  {
+    "second": 250,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 250,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 250,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 250,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 251,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": true
+  },
+  {
+    "second": 251,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 251,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 251,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 252,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 252,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 252,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": true
+  },
+  {
+    "second": 252,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 253,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 253,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 253,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 253,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 254,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 254,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": true
+  },
+  {
+    "second": 254,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 254,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 255,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 255,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 255,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 255,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 256,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 256,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 256,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 256,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 257,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 257,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 257,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 257,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 258,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 258,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 258,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 258,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 259,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 259,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 259,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 259,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 260,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 260,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 260,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 260,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 261,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 261,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 261,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 261,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 262,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 262,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 262,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 262,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 263,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 263,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 263,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 263,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 264,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 264,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 264,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 264,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 265,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 265,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 265,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 265,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 266,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 266,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 266,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 266,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 267,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 267,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 267,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 267,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 268,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 268,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 268,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 268,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 269,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 269,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 269,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 269,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 270,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": true
+  },
+  {
+    "second": 270,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 270,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 270,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 271,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 271,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 271,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 271,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 272,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 272,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 272,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 272,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 273,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 273,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 273,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 273,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 274,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 274,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 274,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 274,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 275,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 275,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 275,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 275,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 276,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 276,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 276,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 276,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 277,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 277,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 277,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 277,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 278,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 278,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 278,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 278,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 279,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 279,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 279,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": true
+  },
+  {
+    "second": 279,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 280,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 280,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 280,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 280,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 281,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": true
+  },
+  {
+    "second": 281,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 281,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 281,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 282,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 282,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 282,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 282,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 283,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 283,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 283,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 283,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 284,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 284,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 284,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 284,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 285,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 285,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 285,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 285,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 286,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 286,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 286,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 286,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 287,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 287,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 287,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 287,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 288,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 288,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 288,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 288,
+    "vehicle_type": 3,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": true
+  },
+  {
+    "second": 289,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 289,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 289,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 289,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 290,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 290,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 290,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 290,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 291,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 291,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 291,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 291,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 292,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 292,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 292,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 292,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 293,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 293,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 293,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 293,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 294,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 294,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 294,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 294,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": false
+  },
+  {
+    "second": 295,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 2,
+    "will_turn": false
+  },
+  {
+    "second": 295,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 295,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 295,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 296,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 296,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 296,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 296,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 3,
+    "will_turn": false
+  },
+  {
+    "second": 297,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 297,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 297,
+    "vehicle_type": 2,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 297,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 298,
+    "vehicle_type": 0,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 298,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 298,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 298,
+    "vehicle_type": 1,
+    "lane_number": 1,
+    "direction_number": 1,
+    "will_turn": true
+  },
+  {
+    "second": 299,
+    "vehicle_type": 2,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 299,
+    "vehicle_type": 3,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": true
+  },
+  {
+    "second": 299,
+    "vehicle_type": 0,
+    "lane_number": 1,
+    "direction_number": 0,
+    "will_turn": false
+  },
+  {
+    "second": 299,
+    "vehicle_type": 1,
+    "lane_number": 2,
+    "direction_number": 0,
+    "will_turn": false
+  }
+]
