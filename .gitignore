@@ -1,0 +1,17 @@
+# Ignore Python virtual environment
+env/
+/env/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore video files
+*.mp4
+*.MOV
+
+# Ignore other common files
+.DS_Store
+*.log
