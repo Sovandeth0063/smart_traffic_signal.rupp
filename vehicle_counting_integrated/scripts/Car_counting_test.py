@@ -43,7 +43,7 @@ classNames = [
             ]
 
 # Load mask image
-mask = cv2.imread("car_counting/car.png")
+mask = cv2.imread("Masks/car.png")
 mask = cv2.resize(mask, (1280, 720))
 
 # Initialize SORT tracker
@@ -73,7 +73,7 @@ while True:
         break
 
     imgRegion = cv2.bitwise_and(img, mask) # set the region of interest
-    imgGraphics = cv2.imread("car_counting/graphics.png", cv2.IMREAD_UNCHANGED)
+    # imgGraphics = cv2.imread("car_counting/graphics.png", cv2.IMREAD_UNCHANGED)
     # img = cvzone.overlayPNG(img, imgGraphics, (0, 0))
 
     results = model(imgRegion, stream=True)

@@ -1,0 +1,1 @@
+mask = cv2.imread("car_counting/project.png")

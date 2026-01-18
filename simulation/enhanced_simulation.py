@@ -5,17 +5,30 @@ import pygame
 import sys
 import os
 
-# --- NEW: CONFIGURATION FOR PROJECT ---
-# Set this to True to use YOLO data, False to use random generation
-USE_YOLO_DATA = True 
+# Add paths for imports
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 
-# Default values of signal timers
+# Import database utility
+try:
+    from vehicle_counting_integrated.secure_streaming import VehicleCountDatabase
+    print("[DB] Database module loaded successfully")
+    DB_AVAILABLE = True
+except ImportError as e:
+    print(f"[DB] Warning: Could not import database module: {e}")
+    DB_AVAILABLE = False
+
+# --- CONFIGURATION ---
+USE_YOLO_DATA = True
+USE_DATABASE = True  # NEW: Use statistical data from database for spawning
+
+# Default values
 defaultGreen = {0:10, 1:10, 2:10, 3:10}
 defaultRed = 150
 defaultYellow = 5
 
 signals = []
-noOfSignals = 2  # 2 phases
+noOfSignals = 2 
 currentGreen = 0 
 nextGreen = (currentGreen+1)%noOfSignals 
 currentYellow = 0 
@@ -45,9 +58,6 @@ vehiclesNotTurned = {'right': {1:[], 2:[]}, 'down': {1:[], 2:[]}, 'left': {1:[],
 rotationAngle = 3
 mid = {'right': {'x':705, 'y':445}, 'down': {'x':695, 'y':450}, 'left': {'x':695, 'y':425}, 'up': {'x':695, 'y':400}}
 
-randomGreenSignalTimer = False # Disabled because we want Smart Timer
-randomGreenSignalTimerRange = [10,20]
-
 timeElapsed = 0
 simulationTime = 300
 timeElapsedCoods = (1100,50)
@@ -59,37 +69,186 @@ instructionsCoords = (20, 20)
 pygame.init()
 simulation = pygame.sprite.Group()
 
-# --- NEW FUNCTION: READ YOLO DATA & CALCULATE TIME ---
+# --- NEW FUNCTION: GET VEHICLE SPAWN RATIOS FROM DATABASE ---
+def get_vehicle_ratios_from_db():
+    """
+    Query database for statistical vehicle type distribution
+    Maps database types to simulation types and calculates spawn ratios
+    """
+    try:
+        if not DB_AVAILABLE:
+            raise Exception("Database module not available")
+        
+        db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'vehicle_detection.db')
+        db = VehicleCountDatabase(db_path=db_path)
+        
+        stats = db.get_statistics()
+        
+        if stats['total_records'] == 0:
+            raise Exception("No data in database")
+        
+        # Extract average counts from database
+        # Database: cars, vans, motors, buses, bicycles
+        # Simulation: car, truck, bike, bus
+        avg_cars = stats['average']['cars']
+        avg_vans = stats['average']['vans']      # maps to truck
+        avg_motors = stats['average']['motors']  # maps to bike
+        avg_buses = stats['average']['buses']
+        
+        total_avg = avg_cars + avg_vans + avg_motors + avg_buses
+        
+        if total_avg == 0:
+            raise Exception("No average vehicle data in database")
+        
+        # Calculate spawn ratios
+        ratios = {
+            'car': avg_cars / total_avg,
+            'truck': avg_vans / total_avg,
+            'bike': avg_motors / total_avg,
+            'bus': avg_buses / total_avg
+        }
+        
+        # Calculate vehicle limits (2x the average for realistic traffic)
+        total_spawn = max(20, int(total_avg * 2))
+        vehicle_limits = {
+            'car': max(5, int(total_spawn * ratios['car'])),
+            'truck': max(2, int(total_spawn * ratios['truck'])),
+            'bike': max(5, int(total_spawn * ratios['bike'])),
+            'bus': max(2, int(total_spawn * ratios['bus']))
+        }
+        
+        print(f"[DB] Database Statistics Loaded:")
+        print(f"  Avg Cars: {avg_cars:.1f} ({ratios['car']:.1%}) -> Limit: {vehicle_limits['car']}")
+        print(f"  Avg Vans/Trucks: {avg_vans:.1f} ({ratios['truck']:.1%}) -> Limit: {vehicle_limits['truck']}")
+        print(f"  Avg Motors/Bikes: {avg_motors:.1f} ({ratios['bike']:.1%}) -> Limit: {vehicle_limits['bike']}")
+        print(f"  Avg Buses: {avg_buses:.1f} ({ratios['bus']:.1%}) -> Limit: {vehicle_limits['bus']}")
+        
+        return vehicle_limits
+        
+    except Exception as e:
+        print(f"[DB] Could not load from database: {e}")
+        return None
+
+# --- FUNCTION: READ YOLO DATA FROM FILE (Fallback) ---
 def get_smart_timing():
     try:
         with open("traffic_data.txt", "r") as f:
             lines = f.readlines()
-            cars = int(lines[0].strip())
-            motos = int(lines[1].strip())
-            trucks = int(lines[2].strip())
-            tuktuks = int(lines[3].strip())
             
-            # --- PCU FORMULA (Your Chapter 6 Logic) ---
-            total_pcu = (cars * 1.0) + (motos * 0.3) + (trucks * 2.5) + (tuktuks * 0.7)
+            # Phase 0
+            p0_cars = int(lines[0].strip())
+            p0_motos = int(lines[1].strip())
+            p0_trucks = int(lines[2].strip())
+            p0_tuktuks = int(lines[3].strip())
             
-            # Convert to seconds (Base 1.8s * 0.6 Parallel Factor)
+            # Phase 1
+            if len(lines) >= 8:
+                p1_cars = int(lines[4].strip())
+                p1_motos = int(lines[5].strip())
+                p1_trucks = int(lines[6].strip())
+                p1_tuktuks = int(lines[7].strip())
+            else:
+                p1_cars, p1_motos, p1_trucks, p1_tuktuks = 2, 2, 0, 0
+
+            # Calculate Initial Green Time based on Phase 0 load
+            total_pcu = (p0_cars * 1.0) + (p0_motos * 0.3) + (p0_trucks * 2.5) + (p0_tuktuks * 0.7)
             calculated_time = total_pcu * 1.8 * 0.6
-            
-            # Cap limits
             final_time = int(max(15, min(90, calculated_time)))
             
-            print(f"[SMART LOGIC] Loaded: {cars} Cars, {motos} Motos, {trucks} Trucks.")
-            print(f"[SMART LOGIC] Calculated Green Time: {final_time} seconds (PCU: {total_pcu})")
+            print(f"[FILE] Loaded Phase 0 & Phase 1 Data from traffic_data.txt")
             
-            return final_time, {'car': cars, 'bike': motos, 'truck': trucks, 'bus': tuktuks}
+            # CORRECTLY COMBINE LIMITS
+            total_limits = {
+                'car': p0_cars + p1_cars,
+                'bike': p0_motos + p1_motos,
+                'truck': p0_trucks + p1_trucks,
+                'bus': p0_tuktuks + p1_tuktuks
+            }
+            
+            return final_time, total_limits
             
     except Exception as e:
-        print("[ERROR] Could not read traffic_data.txt. Using default.")
-        print(e)
-        return 20, {'car': 5, 'bike': 5, 'truck': 1, 'bus': 1} # Default fallback
+        print("[FILE] Could not read traffic_data.txt. Using defaults.")
+        return 20, {'car': 10, 'bike': 10, 'truck': 2, 'bus': 2}
 
-# Get the smart data immediately
-smart_green_time, vehicle_limits = get_smart_timing()
+# Initialize vehicle limits - try database first, then file
+if USE_DATABASE and DB_AVAILABLE:
+    db_limits = get_vehicle_ratios_from_db()
+    if db_limits is None:
+        print("[FALLBACK] Using traffic_data.txt instead")
+        smart_green_time, vehicle_limits = get_smart_timing()
+    else:
+        vehicle_limits = db_limits
+        smart_green_time = 20
+else:
+    smart_green_time, vehicle_limits = get_smart_timing()
+
+# --- NEW FUNCTION: GENERATE PNG REPORT ---
+def generate_final_report_image():
+    print("Generating Final Report Image...")
+    
+    REPORT_BG = (240, 240, 240)
+    BLACK = (0, 0, 0)
+    BLUE = (0, 0, 150)
+    GREY = (200, 200, 200)
+    
+    # Init fonts
+    title_font = pygame.font.SysFont('Arial', 30, bold=True)
+    header_font = pygame.font.SysFont('Arial', 22, bold=True)
+    data_font = pygame.font.SysFont('Arial', 20)
+
+    img_width, img_height = 600, 500
+    report_surface = pygame.Surface((img_width, img_height))
+    report_surface.fill(REPORT_BG)
+
+    title_text = title_font.render("Final Traffic Simulation Report", True, BLUE)
+    time_text = data_font.render(f"Total Duration: {timeElapsed} seconds", True, BLACK)
+    report_surface.blit(title_text, (img_width//2 - title_text.get_width()//2, 30))
+    report_surface.blit(time_text, (img_width//2 - time_text.get_width()//2, 70))
+
+    start_x, start_y = 50, 130
+    col_widths = [180, 150, 150]
+    row_height = 50
+    headers = ["Direction", "Total Spawned", "Total Crossed"]
+    directions = ['right', 'down', 'left', 'up']
+
+    for i, header in enumerate(headers):
+        text = header_font.render(header, True, BLACK)
+        report_surface.blit(text, (start_x + sum(col_widths[:i]), start_y))
+    
+    pygame.draw.line(report_surface, BLACK, (start_x, start_y + 35), (start_x + sum(col_widths), start_y + 35), 3)
+
+    current_y = start_y + row_height
+    grand_total_spawned = 0
+    grand_total_crossed = 0
+
+    for direction in directions:
+        total_spawned = len(vehicles[direction][0]) + len(vehicles[direction][1]) + len(vehicles[direction][2])
+        total_crossed = vehicles[direction]['crossed']
+        grand_total_spawned += total_spawned
+        grand_total_crossed += total_crossed
+
+        row_data = [direction.upper(), str(total_spawned), str(total_crossed)]
+
+        for i, data in enumerate(row_data):
+            text = data_font.render(data, True, BLACK)
+            report_surface.blit(text, (start_x + sum(col_widths[:i]) + 10, current_y))
+        
+        pygame.draw.line(report_surface, GREY, (start_x, current_y + 35), (start_x + sum(col_widths), current_y + 35), 1)
+        current_y += row_height
+
+    pygame.draw.line(report_surface, BLACK, (start_x, current_y), (start_x + sum(col_widths), current_y), 3)
+    current_y += 10
+    total_row_data = ["GRAND TOTAL", str(grand_total_spawned), str(grand_total_crossed)]
+    for i, data in enumerate(total_row_data):
+        text = header_font.render(data, True, BLUE) 
+        report_surface.blit(text, (start_x + sum(col_widths[:i]) + 10, current_y))
+
+    timestamp = time.strftime("%Y%m%d-%H%M%S")
+    filename = f"traffic_report_{timestamp}.png"
+    pygame.image.save(report_surface, filename)
+    print(f"[SUCCESS] Report saved as: {filename}")
+
 
 class TrafficSignal:
     def __init__(self, red, yellow, green):
@@ -123,6 +282,7 @@ class Vehicle(pygame.sprite.Sprite):
         self.originalImage = pygame.transform.scale(self.originalImage, (width, height))
         self.image = self.originalImage.copy()
 
+        # Stop Coordinate Logic
         if(len(vehicles[direction][lane])>1 and vehicles[direction][lane][self.index-1].crossed==0):   
             if(direction=='right'):
                 self.stop = vehicles[direction][lane][self.index-1].stop - vehicles[direction][lane][self.index-1].image.get_rect().width - stoppingGap         
@@ -135,6 +295,7 @@ class Vehicle(pygame.sprite.Sprite):
         else:
             self.stop = defaultStop[direction]
             
+        # Set Initial Position
         if(direction=='right'):
             temp = self.image.get_rect().width + stoppingGap    
             x[direction][lane] -= temp
@@ -153,6 +314,12 @@ class Vehicle(pygame.sprite.Sprite):
         screen.blit(self.image, (self.x, self.y))
 
     def move(self):
+        # Retrieve the vehicle directly in front
+        if self.index > 0:
+            prev_vehicle = vehicles[self.direction][self.lane][self.index-1]
+        else:
+            prev_vehicle = None
+
         if(self.direction=='right'):
             if(self.crossed==0 and self.x+self.image.get_rect().width>stopLines[self.direction]):
                 self.crossed = 1
@@ -163,7 +330,8 @@ class Vehicle(pygame.sprite.Sprite):
             if(self.willTurn==1):
                 if(self.lane == 1): 
                     if(self.crossed==0 or self.x+self.image.get_rect().width<stopLines[self.direction]+40):
-                        if((self.x+self.image.get_rect().width<=self.stop or (currentGreen==0 and currentYellow==0) or self.crossed==1) and (self.index==0 or self.x+self.image.get_rect().width<(vehicles[self.direction][self.lane][self.index-1].x - movingGap) or vehicles[self.direction][self.lane][self.index-1].turned==1)):               
+                        # UPDATED GAP LOGIC: Check if prev vehicle is turning/crossed
+                        if((self.x+self.image.get_rect().width<=self.stop or (currentGreen==0 and currentYellow==0) or self.crossed==1) and (self.index==0 or self.x+self.image.get_rect().width<(prev_vehicle.x - movingGap) or prev_vehicle.turned==1 or (prev_vehicle.crossed==1 and prev_vehicle.willTurn==1))):               
                             self.x += self.speed
                     else:
                         if(self.turned==0):
@@ -180,7 +348,7 @@ class Vehicle(pygame.sprite.Sprite):
                                 self.y += self.speed
                 elif(self.lane == 2): 
                     if(self.crossed==0 or self.x+self.image.get_rect().width<mid[self.direction]['x']):
-                        if((self.x+self.image.get_rect().width<=self.stop or (currentGreen==0 and currentYellow==0) or self.crossed==1) and (self.index==0 or self.x+self.image.get_rect().width<(vehicles[self.direction][self.lane][self.index-1].x - movingGap) or vehicles[self.direction][self.lane][self.index-1].turned==1)):                 
+                        if((self.x+self.image.get_rect().width<=self.stop or (currentGreen==0 and currentYellow==0) or self.crossed==1) and (self.index==0 or self.x+self.image.get_rect().width<(prev_vehicle.x - movingGap) or prev_vehicle.turned==1 or (prev_vehicle.crossed==1 and prev_vehicle.willTurn==1))):                
                             self.x += self.speed
                     else:
                         if(self.turned==0):
@@ -197,11 +365,12 @@ class Vehicle(pygame.sprite.Sprite):
                                 self.y -= self.speed
             else: 
                 if(self.crossed == 0):
-                    if((self.x+self.image.get_rect().width<=self.stop or (currentGreen==0 and currentYellow==0)) and (self.index==0 or self.x+self.image.get_rect().width<(vehicles[self.direction][self.lane][self.index-1].x - movingGap))):                
+                    if((self.x+self.image.get_rect().width<=self.stop or (currentGreen==0 and currentYellow==0)) and (self.index==0 or self.x+self.image.get_rect().width<(prev_vehicle.x - movingGap))):                
                         self.x += self.speed
                 else:
-                    if((self.crossedIndex==0) or (self.x+self.image.get_rect().width<(vehiclesNotTurned[self.direction][self.lane][self.crossedIndex-1].x - movingGap))):                 
+                    if((self.crossedIndex==0) or (self.x+self.image.get_rect().width<(vehiclesNotTurned[self.direction][self.lane][self.crossedIndex-1].x - movingGap))):                
                         self.x += self.speed
+        
         elif(self.direction=='down'):
             if(self.crossed==0 and self.y+self.image.get_rect().height>stopLines[self.direction]):
                 self.crossed = 1
@@ -212,7 +381,7 @@ class Vehicle(pygame.sprite.Sprite):
             if(self.willTurn==1):
                 if(self.lane == 1): 
                     if(self.crossed==0 or self.y+self.image.get_rect().height<stopLines[self.direction]+50):
-                        if((self.y+self.image.get_rect().height<=self.stop or (currentGreen==1 and currentYellow==0) or self.crossed==1) and (self.index==0 or self.y+self.image.get_rect().height<(vehicles[self.direction][self.lane][self.index-1].y - movingGap) or vehicles[self.direction][self.lane][self.index-1].turned==1)):                
+                        if((self.y+self.image.get_rect().height<=self.stop or (currentGreen==1 and currentYellow==0) or self.crossed==1) and (self.index==0 or self.y+self.image.get_rect().height<(prev_vehicle.y - movingGap) or prev_vehicle.turned==1 or (prev_vehicle.crossed==1 and prev_vehicle.willTurn==1))):                
                             self.y += self.speed
                     else:   
                         if(self.turned==0):
@@ -229,7 +398,7 @@ class Vehicle(pygame.sprite.Sprite):
                                 self.x -= self.speed
                 elif(self.lane == 2): 
                     if(self.crossed==0 or self.y+self.image.get_rect().height<mid[self.direction]['y']):
-                        if((self.y+self.image.get_rect().height<=self.stop or (currentGreen==1 and currentYellow==0) or self.crossed==1) and (self.index==0 or self.y+self.image.get_rect().height<(vehicles[self.direction][self.lane][self.index-1].y - movingGap) or vehicles[self.direction][self.lane][self.index-1].turned==1)):                
+                        if((self.y+self.image.get_rect().height<=self.stop or (currentGreen==1 and currentYellow==0) or self.crossed==1) and (self.index==0 or self.y+self.image.get_rect().height<(prev_vehicle.y - movingGap) or prev_vehicle.turned==1 or (prev_vehicle.crossed==1 and prev_vehicle.willTurn==1))):                
                             self.y += self.speed
                     else:   
                         if(self.turned==0):
@@ -246,11 +415,12 @@ class Vehicle(pygame.sprite.Sprite):
                                 self.x += self.speed
             else: 
                 if(self.crossed == 0):
-                    if((self.y+self.image.get_rect().height<=self.stop or (currentGreen==1 and currentYellow==0)) and (self.index==0 or self.y+self.image.get_rect().height<(vehicles[self.direction][self.lane][self.index-1].y - movingGap))):                
+                    if((self.y+self.image.get_rect().height<=self.stop or (currentGreen==1 and currentYellow==0)) and (self.index==0 or self.y+self.image.get_rect().height<(prev_vehicle.y - movingGap))):                
                         self.y += self.speed
                 else:
                     if((self.crossedIndex==0) or (self.y+self.image.get_rect().height<(vehiclesNotTurned[self.direction][self.lane][self.crossedIndex-1].y - movingGap))):                
                         self.y += self.speed
+
         elif(self.direction=='left'):
             if(self.crossed==0 and self.x<stopLines[self.direction]):
                 self.crossed = 1
@@ -261,7 +431,7 @@ class Vehicle(pygame.sprite.Sprite):
             if(self.willTurn==1):
                 if(self.lane == 1): 
                     if(self.crossed==0 or self.x>stopLines[self.direction]-70):
-                        if((self.x>=self.stop or (currentGreen==0 and currentYellow==0) or self.crossed==1) and (self.index==0 or self.x>(vehicles[self.direction][self.lane][self.index-1].x + vehicles[self.direction][self.lane][self.index-1].image.get_rect().width + movingGap) or vehicles[self.direction][self.lane][self.index-1].turned==1)):                
+                        if((self.x>=self.stop or (currentGreen==0 and currentYellow==0) or self.crossed==1) and (self.index==0 or self.x>(prev_vehicle.x + prev_vehicle.image.get_rect().width + movingGap) or prev_vehicle.turned==1 or (prev_vehicle.crossed==1 and prev_vehicle.willTurn==1))):                
                             self.x -= self.speed
                     else: 
                         if(self.turned==0):
@@ -278,7 +448,7 @@ class Vehicle(pygame.sprite.Sprite):
                                 self.y -= self.speed
                 elif(self.lane == 2): 
                     if(self.crossed==0 or self.x>mid[self.direction]['x']):
-                        if((self.x>=self.stop or (currentGreen==0 and currentYellow==0) or self.crossed==1) and (self.index==0 or self.x>(vehicles[self.direction][self.lane][self.index-1].x + vehicles[self.direction][self.lane][self.index-1].image.get_rect().width + movingGap) or vehicles[self.direction][self.lane][self.index-1].turned==1)):                
+                        if((self.x>=self.stop or (currentGreen==0 and currentYellow==0) or self.crossed==1) and (self.index==0 or self.x>(prev_vehicle.x + prev_vehicle.image.get_rect().width + movingGap) or prev_vehicle.turned==1 or (prev_vehicle.crossed==1 and prev_vehicle.willTurn==1))):                
                             self.x -= self.speed
                     else:
                         if(self.turned==0):
@@ -295,11 +465,12 @@ class Vehicle(pygame.sprite.Sprite):
                                 self.y += self.speed
             else: 
                 if(self.crossed == 0):
-                    if((self.x>=self.stop or (currentGreen==0 and currentYellow==0)) and (self.index==0 or self.x>(vehicles[self.direction][self.lane][self.index-1].x + vehicles[self.direction][self.lane][self.index-1].image.get_rect().width + movingGap))):                
+                    if((self.x>=self.stop or (currentGreen==0 and currentYellow==0)) and (self.index==0 or self.x>(prev_vehicle.x + prev_vehicle.image.get_rect().width + movingGap))):                
                         self.x -= self.speed
                 else:
                     if((self.crossedIndex==0) or (self.x>(vehiclesNotTurned[self.direction][self.lane][self.crossedIndex-1].x + vehiclesNotTurned[self.direction][self.lane][self.crossedIndex-1].image.get_rect().width + movingGap))):                
                         self.x -= self.speed
+
         elif(self.direction=='up'):
             if(self.crossed==0 and self.y<stopLines[self.direction]):
                 self.crossed = 1
@@ -310,7 +481,7 @@ class Vehicle(pygame.sprite.Sprite):
             if(self.willTurn==1):
                 if(self.lane == 1): 
                     if(self.crossed==0 or self.y>stopLines[self.direction]-60):
-                        if((self.y>=self.stop or (currentGreen==1 and currentYellow==0) or self.crossed == 1) and (self.index==0 or self.y>(vehicles[self.direction][self.lane][self.index-1].y + vehicles[self.direction][self.lane][self.index-1].image.get_rect().height +  movingGap) or vehicles[self.direction][self.lane][self.index-1].turned==1)): 
+                        if((self.y>=self.stop or (currentGreen==1 and currentYellow==0) or self.crossed == 1) and (self.index==0 or self.y>(prev_vehicle.y + prev_vehicle.image.get_rect().height +  movingGap) or prev_vehicle.turned==1 or (prev_vehicle.crossed==1 and prev_vehicle.willTurn==1))): 
                             self.y -= self.speed
                     else:   
                         if(self.turned==0):
@@ -327,7 +498,7 @@ class Vehicle(pygame.sprite.Sprite):
                                 self.x += self.speed
                 elif(self.lane == 2): 
                     if(self.crossed==0 or self.y>mid[self.direction]['y']):
-                        if((self.y>=self.stop or (currentGreen==1 and currentYellow==0) or self.crossed == 1) and (self.index==0 or self.y>(vehicles[self.direction][self.lane][self.index-1].y + vehicles[self.direction][self.lane][self.index-1].image.get_rect().height +  movingGap) or vehicles[self.direction][self.lane][self.index-1].turned==1)):  
+                        if((self.y>=self.stop or (currentGreen==1 and currentYellow==0) or self.crossed == 1) and (self.index==0 or self.y>(prev_vehicle.y + prev_vehicle.image.get_rect().height +  movingGap) or prev_vehicle.turned==1 or (prev_vehicle.crossed==1 and prev_vehicle.willTurn==1))):  
                             self.y -= self.speed
                     else:   
                         if(self.turned==0):
@@ -344,22 +515,17 @@ class Vehicle(pygame.sprite.Sprite):
                                 self.x -= self.speed
             else: 
                 if(self.crossed == 0):
-                    if((self.y>=self.stop or (currentGreen==1 and currentYellow==0)) and (self.index==0 or self.y>(vehicles[self.direction][self.lane][self.index-1].y + vehicles[self.direction][self.lane][self.index-1].image.get_rect().height + movingGap))):                
+                    if((self.y>=self.stop or (currentGreen==1 and currentYellow==0)) and (self.index==0 or self.y>(prev_vehicle.y + prev_vehicle.image.get_rect().height + movingGap))):                
                         self.y -= self.speed
                 else:
                     if((self.crossedIndex==0) or (self.y>(vehiclesNotTurned[self.direction][self.lane][self.crossedIndex-1].y + vehiclesNotTurned[self.direction][self.lane][self.crossedIndex-1].image.get_rect().height + movingGap))):                
                         self.y -= self.speed 
 
 def initialize():
-    # --- UPDATED: USE SMART TIMING ---
-    # Phase 0: X-axis (Right/Left) gets the Smart Time
     ts1 = TrafficSignal(0, defaultYellow, smart_green_time)
     signals.append(ts1)
-    
-    # Phase 1: Y-axis (Down/Up) gets default time (for comparison)
     ts2 = TrafficSignal(ts1.yellow+ts1.green, defaultYellow, defaultGreen[1])
     signals.append(ts2)
-    
     repeat()
 
 def printStatus():
@@ -375,45 +541,62 @@ def printStatus():
                 print("   RED", phaseNames[i], "-> r:",signals[i].red," y:",signals[i].yellow," g:",signals[i].green)
     print()  
 
+def calculate_dynamic_green_time(phase):
+    if phase == 0:
+        directions = ['right', 'left']
+    else:
+        directions = ['down', 'up']
+        
+    cars = 0
+    bikes = 0
+    trucks = 0
+    buses = 0
+    
+    for direction in directions:
+        for lane in range(3): 
+            for vehicle in vehicles[direction][lane]:
+                if vehicle.crossed == 0: 
+                    v_type = vehicle.vehicleClass
+                    if v_type == 'car': cars += 1
+                    elif v_type == 'bike': bikes += 1
+                    elif v_type == 'truck': trucks += 1
+                    elif v_type == 'bus': buses += 1
+
+    total_pcu = (cars * 1.0) + (bikes * 0.3) + (trucks * 2.5) + (buses * 0.7)
+    calculated_time = int(total_pcu * 1.8 * 0.6)
+    final_time = max(10, min(90, calculated_time))
+    
+    print(f"[REAL-TIME] Phase {phase} Queue: {cars} Cars, {bikes} Bikes. New Time: {final_time}s")
+    return final_time
+
 def repeat():
     global currentGreen, currentYellow, nextGreen
     phaseDirections = {0: ['right', 'left'], 1: ['down', 'up']}
     
-    # --- [NEW] GAP TIMER INITIALIZATION ---
+    real_time_duration = calculate_dynamic_green_time(currentGreen)
+    signals[currentGreen].green = real_time_duration
+    
     empty_lane_counter = 0 
     
-    # --- LOOP: While Green Timer is Running ---
     while(signals[currentGreen].green > 0):
-        
-        # ==============================================================================
-        # [NEW] SMART GAP LOGIC (10 Second Rule)
-        # ==============================================================================
-        # 1. Identify which roads are currently moving
         if currentGreen == 0: 
-            active_dirs = ['right', 'left'] # X-Axis
+            active_dirs = ['right', 'left']
         else: 
-            active_dirs = ['down', 'up']    # Y-Axis
+            active_dirs = ['down', 'up']
 
-        # 2. Count vehicles still on road
         vehicles_still_on_road = 0
         for direction in active_dirs:
-            # Total Spawned - Total Crossed = Vehicles Currently on Road
             total_generated = len(vehicles[direction][0]) + len(vehicles[direction][1]) + len(vehicles[direction][2])
             total_crossed = vehicles[direction]['crossed']
             vehicles_still_on_road += (total_generated - total_crossed)
 
-        # 3. The 10-Second Logic
         if vehicles_still_on_road == 0:
-            empty_lane_counter += 1 # Count up: 1s, 2s, 3s...
-            print(f"   [SENSOR] Road Empty for {empty_lane_counter}s...")
-            
-            # If empty for 10 seconds, force the switch
-            if empty_lane_counter >= 10:
-                print(f"   [GAP OUT] Empty > 10s. Cutting Green Light Early!")
+            empty_lane_counter += 1 
+            if empty_lane_counter >= 5:
+                print(f"   [GAP OUT] Empty > 5s. Cutting Green Light Early!")
                 signals[currentGreen].green = 0 
         else:
-            empty_lane_counter = 0 # Reset counter if a car is found
-        # ==============================================================================
+            empty_lane_counter = 0 
 
         printStatus()
         updateValues()
@@ -421,25 +604,18 @@ def repeat():
         
     currentYellow = 1 
     
-    # Reset stops for vehicles
     for direction in phaseDirections[currentGreen]:
         for i in range(0,3):
             for vehicle in vehicles[direction][i]:
                 vehicle.stop = defaultStop[direction]
 
-    # --- LOOP: Yellow Timer ---
     while(signals[currentGreen].yellow > 0): 
         printStatus()
         updateValues()
         time.sleep(1)
     currentYellow = 0 
     
-    # --- Reset Timers for Next Cycle ---
-    if currentGreen == 0: 
-        signals[currentGreen].green = smart_green_time 
-    else:
-        signals[currentGreen].green = defaultGreen[currentGreen]
-        
+    signals[currentGreen].green = defaultGreen[currentGreen]
     signals[currentGreen].yellow = defaultYellow
     signals[currentGreen].red = defaultRed
        
@@ -458,21 +634,17 @@ def updateValues():
         else:
             signals[i].red-=1
 
-# --- UPDATED: SPAWN BASED ON YOLO COUNTS ---
 def generateVehicles():
-    # Use the limits from the text file
     spawned_counts = {'car': 0, 'bus': 0, 'truck': 0, 'bike': 0}
     
     while(True):
         vehicle_type_id = random.choice(allowedVehicleTypesList)
         vehicle_type_name = vehicleTypes[vehicle_type_id]
         
-        # Check if we have already spawned enough of this type
-        # (This makes the simulation match the YOLO numbers visually)
         if USE_YOLO_DATA:
             if spawned_counts[vehicle_type_name] >= vehicle_limits[vehicle_type_name]:
                 time.sleep(0.5)
-                continue # Skip if we hit the limit for this vehicle type
+                continue 
             
         spawned_counts[vehicle_type_name] += 1
         
@@ -517,16 +689,20 @@ def spawnVehicleManually(direction_number):
     Vehicle(lane_number, vehicleTypes[vehicle_type], direction_number, direction, will_turn)
     print(f"Vehicle spawned: {vehicleTypes[vehicle_type]} in {direction} lane {lane_number}")
 
+# --- UPDATED showStats: No Crash Logic ---
 def showStats():
     totalVehicles = 0
     print('Direction-wise Vehicle Counts')
+    # Loop over 4 directions explicitly using vehicle data, NOT signals list
     for i in range(0,4):
-        if(signals[i]!=None):
-            print('Direction',i+1,':',vehicles[directionNumbers[i]]['crossed'])
-            totalVehicles += vehicles[directionNumbers[i]]['crossed']
+        direction = directionNumbers[i]
+        count = vehicles[direction]['crossed']
+        print(f"Direction {i+1} ({direction}): {count}")
+        totalVehicles += count
     print('Total vehicles passed:',totalVehicles)
     print('Total time:',timeElapsed)
 
+# --- UPDATED SIMTIME: Generates Report on Timeout ---
 def simTime():
     global timeElapsed, simulationTime
     while(True):
@@ -534,6 +710,7 @@ def simTime():
         time.sleep(1)
         if(timeElapsed==simulationTime):
             showStats()
+            generate_final_report_image() # <--- Generates PNG record
             os._exit(1) 
 
 class Main:
@@ -557,7 +734,7 @@ class Main:
     background = pygame.image.load('images/intersection.png')
 
     screen = pygame.display.set_mode(screenSize)
-    pygame.display.set_caption("SMART TRAFFIC SIMULATION (YOLO INTEGRATED)")
+    pygame.display.set_caption("SMART TRAFFIC SIMULATION (DATABASE INTEGRATED)")
 
     redSignal = pygame.image.load('images/signals/red.png')
     yellowSignal = pygame.image.load('images/signals/yellow.png')
@@ -575,6 +752,7 @@ class Main:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 showStats()
+                generate_final_report_image() # <--- Generates PNG record on Close
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_1:
@@ -631,8 +809,10 @@ class Main:
 
         if manualSpawnEnabled:
             instructionFont = pygame.font.Font(None, 20)
+            data_source = "DATABASE" if (USE_DATABASE and DB_AVAILABLE) else "FILE"
             instructions = [
                 "Smart Traffic Mode Active",
+                f"Data Source: {data_source}",
                 f"Calculated Time: {smart_green_time}s",
                 "Press 1-4 to Spawn Manually"
             ]

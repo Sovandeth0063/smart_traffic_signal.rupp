@@ -1,0 +1,8 @@
+Time 10.1s: Cars: 0, Vans: 0, Motors: 10, Buses: 0, Bicycles: 0
+Time 20.1s: Cars: 8, Vans: 2, Motors: 21, Buses: 0, Bicycles: 0
+Time 30.1s: Cars: 11, Vans: 6, Motors: 37, Buses: 0, Bicycles: 0
+Time 40.1s: Cars: 16, Vans: 11, Motors: 44, Buses: 0, Bicycles: 0
+Time 50.2s: Cars: 24, Vans: 14, Motors: 54, Buses: 0, Bicycles: 0
+Time 60.2s: Cars: 24, Vans: 14, Motors: 61, Buses: 0, Bicycles: 0
+Time 70.2s: Cars: 26, Vans: 14, Motors: 66, Buses: 0, Bicycles: 0
+Time 80.2s: Cars: 27, Vans: 14, Motors: 68, Buses: 0, Bicycles: 0
