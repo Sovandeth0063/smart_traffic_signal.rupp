@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  traffic-detection:
+    image: sovandeth0063/smart-traffic-light:latest
+    container_name: smart_traffic_detection
+    volumes:
+      - ./data:/app/data
+      - ./Videos:/app/Videos
+      - ./security_logs:/app/security_logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    working_dir: /app
+    command: python vehicle_counting_integrated/PassedCounting.py
+
+  traffic-simulation:
+    image: sovandeth0063/smart-traffic-light:latest
+    container_name: smart_traffic_simulation
+    volumes:
+      - ./data:/app/data
+      - ./security_logs:/app/security_logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    working_dir: /app/simulation
+    command: python enhanced_simulation.py
+    depends_on:
+      - traffic-detection
