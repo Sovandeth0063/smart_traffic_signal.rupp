@@ -12,8 +12,11 @@ import logging
 from pathlib import Path
 
 # Add parent directory to path for imports
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+
+sys.path.insert(0, SCRIPT_DIR)
+sys.path.insert(0, PROJECT_ROOT)
 
 # Import database utility
 try:
@@ -125,11 +128,11 @@ def main():
     try:
         # Configuration with validation
         config = {
-            'video_path': "../Videos/Kampuchea_krom.MOV",
-            'model_path': "../Version1.pt",
-            'mask_path': "project.png",
-            'output_path': "vehicle_countsversion2.txt",
-            'output_log': "vehicle_detection.log",
+            'video_path': os.path.join(PROJECT_ROOT, "Videos", "Kampuchea_krom.MOV"),
+            'model_path': os.path.join(PROJECT_ROOT, "Version1.pt"),
+            'mask_path': os.path.join(SCRIPT_DIR, "Masks", "project.png"),
+            'output_path': os.path.join(SCRIPT_DIR, "vehicle_countsversion2.txt"),
+            'output_log': os.path.join(SCRIPT_DIR, "vehicle_detection.log"),
             'interval': 10,
             'confidence_threshold': 0.3,
             'limits': [250, 267, 677, 267],

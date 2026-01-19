@@ -1,3 +1,13 @@
+import sys
+import os
+
+# Get directory paths
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PARENT_DIR = os.path.dirname(SCRIPT_DIR)  # vehicle_counting_integrated
+PROJECT_ROOT = os.path.dirname(PARENT_DIR)  # Object Detection
+
+sys.path.append(PARENT_DIR)
+
 import numpy as np
 from ultralytics import YOLO
 import cv2
@@ -22,10 +32,10 @@ def calculate_iou(box1, box2):
     return inter_area / union_area
 
 # Load video
-cap = cv2.VideoCapture("Videos/cars.mp4")
+cap = cv2.VideoCapture(os.path.join(PROJECT_ROOT, "Videos", "cars.mp4"))
 
 # Load YOLO model
-model = YOLO("yolo11l.pt").to("cuda")
+model = YOLO(os.path.join(PROJECT_ROOT, "Version1.pt")).to("cuda")
  
 
 # COCO class names
@@ -43,7 +53,7 @@ classNames = [
             ]
 
 # Load mask image
-mask = cv2.imread("Masks/car.png")
+mask = cv2.imread(os.path.join(PARENT_DIR, "Masks", "car.png"))
 mask = cv2.resize(mask, (1280, 720))
 
 # Initialize SORT tracker
